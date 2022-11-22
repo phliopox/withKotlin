@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_left"
+        android:icon="@drawable/selector_on_off"
+        android:title="@string/bottomBar_left"
+        />
+    <item android:id="@+id/navigation_center"
+        android:title="@string/bottomBar_center"
+        android:icon="@drawable/selector_on_off"
+        />
+    <item android:id="@+id/navigation_right"
+        android:icon="@drawable/selector_on_off"
+        android:title="@string/bottomBar_right"
+        />
+</menu>

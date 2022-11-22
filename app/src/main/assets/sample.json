@@ -1,0 +1,20 @@
+{
+  "home_banner" : [{
+    "banner_id": 1,
+    "banner_image_url": "https://user-images.githubusercontent.com/91457591/202981528-581719b7-21ea-4d48-ad36-121b8ab5f733.png",
+    "banner_title": "서울 프리마켓",
+    "banner_description": "2022-11-22\n 마포구 상수 서울 최대 프리마켓이 열립니다.! 오후 4~11시까지 진행됩니다"
+    },
+    {
+      "banner_id": 2,
+      "banner_image_url": "https://user-images.githubusercontent.com/91457591/202981532-917ffb85-f2f9-46b3-9b57-f53f9bfb4ed8.png",
+      "banner_title": "영화 동아리",
+      "banner_description": "타임리스를 재밋게 본 모든 분들 !! 환영합니다"
+    },
+    {
+      "banner_id": 3,
+      "banner_image_url": "https://user-images.githubusercontent.com/91457591/202981525-5f4ee2aa-d7e4-4577-a523-103b2bbcb951.png",
+      "banner_title": "테니스부",
+      "banner_description": "구력 6개월 이상 환영합니다, 테린이도 좋아요"
+    }
+  ]}

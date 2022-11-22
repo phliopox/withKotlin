@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="banner"
+            type="com.prac.kotlinself.HomeBannerModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/banner_title"
+            style="@style/TextHeadline.bold.white"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{banner.bannerTitle}"
+            app:layout_constraintEnd_toEndOf="@+id/home_banner_image1"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/home_banner_image1"
+            app:layout_constraintTop_toTopOf="@+id/home_banner_image1"
+            tools:text="예시텍스트" />
+
+        <TextView
+            android:id="@+id/home_banner_description"
+            style="@style/Description.white"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@{banner.bannerDescription}"
+            app:layout_constraintEnd_toEndOf="@+id/home_banner_image1"
+            app:layout_constraintStart_toStartOf="@id/home_banner_image1"
+            app:layout_constraintTop_toBottomOf="@+id/banner_title"
+            tools:text="예시텍스트예예시텍스트예시텍스트예시텍스트시텍스트예시텍스트예시텍스트" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_banner_image1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            imageUrl="@{banner.bannerImageUrl}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

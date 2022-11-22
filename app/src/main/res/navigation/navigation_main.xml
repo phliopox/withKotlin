@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/navigation_center">
+    <fragment
+        android:id="@+id/navigation_center"
+        android:name="com.prac.kotlinself.CenterFragment"
+        android:label="CenterFragment"
+        tools:layout="@layout/fragment_center"/>
+    <fragment
+        android:id="@+id/navigation_right"
+        android:name="com.prac.kotlinself.RightFragment"
+        android:label="RightFragment"
+        tools:layout="@layout/fragment_right"/>
+    <fragment
+        android:id="@+id/navigation_left"
+        android:name="com.prac.kotlinself.LeftFragment"
+        android:label="LeftFragment"
+        tools:layout="@layout/fragement_left"/>
+</navigation>
