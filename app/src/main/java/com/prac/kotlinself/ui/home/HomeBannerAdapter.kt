@@ -1,14 +1,14 @@
-package com.prac.kotlinself
+package com.prac.kotlinself.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Adapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.prac.kotlinself.databinding.SlideBannerBinding
+import com.prac.kotlinself.model.Banner
 
-class BannerAdapter : ListAdapter< HomeBannerModel , BannerAdapter.BannerViewHolder >(
+class BannerAdapter : ListAdapter<Banner, BannerAdapter.BannerViewHolder>(
     BannerAdapterDiffCallBack()
 ){
     private lateinit var binding : SlideBannerBinding
@@ -23,7 +23,7 @@ class BannerAdapter : ListAdapter< HomeBannerModel , BannerAdapter.BannerViewHol
     }
 
     inner class BannerViewHolder(private val binding : SlideBannerBinding ) : RecyclerView.ViewHolder(binding.root){
-        fun bind(banner : HomeBannerModel){
+        fun bind(banner : Banner){
             binding.banner = banner
             binding.executePendingBindings()
         }
@@ -31,12 +31,12 @@ class BannerAdapter : ListAdapter< HomeBannerModel , BannerAdapter.BannerViewHol
 
 }
 
-class BannerAdapterDiffCallBack : DiffUtil.ItemCallback<HomeBannerModel>(){
-    override fun areItemsTheSame(oldItem: HomeBannerModel, newItem: HomeBannerModel): Boolean {
+class BannerAdapterDiffCallBack : DiffUtil.ItemCallback<Banner>(){
+    override fun areItemsTheSame(oldItem: Banner, newItem: Banner): Boolean {
         return oldItem.bannerId == newItem.bannerId
     }
 
-    override fun areContentsTheSame(oldItem: HomeBannerModel, newItem: HomeBannerModel): Boolean {
+    override fun areContentsTheSame(oldItem: Banner, newItem: Banner): Boolean {
         return oldItem == newItem
     }
 

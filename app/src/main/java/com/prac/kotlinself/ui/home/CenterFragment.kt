@@ -1,4 +1,4 @@
-package com.prac.kotlinself
+package com.prac.kotlinself.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.prac.kotlinself.R
+import com.prac.kotlinself.ViewModelFactory
 import com.prac.kotlinself.databinding.FragmentCenterBinding
 
 
 class CenterFragment : Fragment() {
 
-    private val viewModel :HomeViewModel by viewModels{ ViewModelFactory(requireContext())}
+    private val viewModel : HomeViewModel by viewModels{ ViewModelFactory(requireContext()) }
     private lateinit var binding :FragmentCenterBinding
 
     override fun onCreateView(
@@ -30,7 +32,7 @@ class CenterFragment : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
 
         with(binding.viewpagerHomeBanner){
-        val adapter = BannerAdapter().apply {
+            adapter = BannerAdapter().apply {
             viewModel.banners.observe(viewLifecycleOwner) { banners ->
                 submitList(banners)
                 }

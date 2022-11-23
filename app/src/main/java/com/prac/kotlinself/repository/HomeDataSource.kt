@@ -1,7 +1,6 @@
 package com.prac.kotlinself.repository
 
-import com.prac.kotlinself.HomeBannerModel
-import com.prac.kotlinself.HomeData
+import com.prac.kotlinself.model.HomeData
 
 interface HomeDataSource {
     fun getHomeData(): HomeData?

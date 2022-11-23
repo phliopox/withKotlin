@@ -6,7 +6,7 @@
 
         <variable
             name="banner"
-            type="com.prac.kotlinself.HomeBannerModel" />
+            type="com.prac.kotlinself.model.Banner" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

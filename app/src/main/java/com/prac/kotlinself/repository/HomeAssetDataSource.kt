@@ -2,7 +2,7 @@ package com.prac.kotlinself.repository
 
 import android.content.Context
 import com.google.gson.Gson
-import com.prac.kotlinself.HomeData
+import com.prac.kotlinself.model.HomeData
 
 class HomeAssetDataSource(private val assetLoader:AssetLoader) :HomeDataSource {
     private val gson= Gson()
