@@ -16,7 +16,7 @@
         tools:layout="@layout/fragment_right"/>
     <fragment
         android:id="@+id/navigation_left"
-        android:name="com.prac.kotlinself.ui.LeftFragment"
+        android:name="com.prac.kotlinself.ui.category.LeftFragment"
         android:label="LeftFragment"
         tools:layout="@layout/fragement_left"/>
 </navigation>

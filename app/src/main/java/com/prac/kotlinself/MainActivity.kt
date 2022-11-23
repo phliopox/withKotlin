@@ -5,8 +5,6 @@ import android.os.Bundle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.prac.kotlinself.repository.AssetLoader
-import com.prac.kotlinself.repository.HomeAssetDataSource
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

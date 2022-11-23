@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "alphabet" : "A",
+      "name": "축구부"
+    },
+    {
+      "alphabet" : "B",
+      "name": "방송부"
+    },
+    {
+      "alphabet" : "C",
+      "name": "농구부"
+    },
+    {
+      "alphabet" : "D",
+      "name": "밴드부"
+    },
+    {
+      "alphabet" : "E",
+      "name": "메타버스부"
+    },
+    {
+      "alphabet" : "F",
+      "name": "댄스부"
+    },
+    {
+      "alphabet" : "G",
+      "name": "바둑부"
+    },
+    {
+      "alphabet" : "H",
+      "name": "스펙부"
+    },{
+      "alphabet" : "I",
+      "name": "데자부"
+    },
+    {
+      "alphabet" : "J",
+      "name": "독서부"
+    }
+  ]
+}
